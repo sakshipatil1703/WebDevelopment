@@ -1,6 +1,33 @@
-h3 {
-        	text-align: center; 
-            color: green; 
-            font-family: Verdana; 
-            font-size: 30px;
-        }
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* XML content container styling */
+.xml-content {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap; /* Ensures that whitespace formatting in XML is maintained */
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f0f0f0;
+}
+
+/* Preformatted text styling */
+pre {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #333;
+}

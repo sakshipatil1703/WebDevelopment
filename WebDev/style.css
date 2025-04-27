@@ -1,0 +1,293 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+  margin: 0;
+  background-color: #ecf0f1; /* Very light gray background */
+  color: #34495e; /* Dark grayish blue text */
+  line-height: 1.7;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Fade-in effect on body */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Header */
+header {
+  background-color: #34495e; /* Dark grayish blue header */
+  color: #fff;
+  padding: 0.5em 0; /* Slightly reduced vertical padding */
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* For potential background decorations */
+  overflow: hidden; /* Clip any overflowing pseudo-elements */
+  transform: translateY(-20px);
+  animation: slideInHeader 0.8s ease-out forwards;
+}
+
+@keyframes slideInHeader {
+  from { transform: translateY(-20px); }
+  to { transform: translateY(0); }
+}
+
+header .logo {
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Personal Information Section */
+#personal-info {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.info-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Allows for potential centering and width control */
+  text-align: left; /* Align text within the card */
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px;
+  opacity: 0;
+  animation: fadeInCard 1s ease-out forwards;
+}
+
+@keyframes fadeInCard {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.info-card h2 {
+  font-size: 2.5em;
+  color: #2ecc71; /* Bright green for the name - subtle but eye-catching */
+  margin-bottom: 0px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Enhanced shadow for better contrast */
+}
+
+.info-card h4 {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+  color: #f94e5c; /* Bright golden yellow for paragraphs */
+  text-transform: uppercase;
+}
+
+/* Decorative line */
+.info-card::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 60px;
+  height: 3px;
+  background-color: #f39c12; /* Yellow/Orange decorative line */
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Assignments Section */
+#assignments {
+  padding: 40px 0;
+}
+
+#assignments .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50; /* Dark blue for section title */
+  font-size: 2em;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #f39c12; /* Yellow/Orange underline */
+  display: inline-block;
+  margin: 0 auto 30px; /* Center the title */
+  transform: translateY(-20px);
+  animation: slideInTitle 0.8s ease-out forwards;
+}
+
+@keyframes slideInTitle {
+  from { transform: translateY(-20px); }
+  to { transform: translateY(0); }
+}
+
+.assignment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly wider cards */
+  gap: 25px;
+}
+
+.category-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: fadeInCardDelay 0.8s ease-out forwards;
+}
+
+@keyframes fadeInCardDelay {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.category-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.category-card .logo {
+  max-width: 90px;
+  height: auto;
+  margin-bottom: 15px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.1)); /* Subtle logo shadow */
+}
+
+.category-card h3 {
+  margin-top: 0;
+  color: #2980b9; /* Another shade of blue */
+  font-size: 1.5em;
+}
+
+/* View Button Animations */
+.view-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #27ae60; /* Emerald green button */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  margin-top: 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInButton 1s ease-out forwards;
+}
+
+@keyframes fadeInButton {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.view-button:hover {
+  background-color: #219653; /* Darker emerald green */
+  transform: scale(1.03); /* Slight scale up on hover */
+}
+
+.assignment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.assignment-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.assignment-list li:last-child {
+  border-bottom: none;
+}
+
+.assignment-list li a {
+  color: #34495e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out, padding-left 0.2s ease-in-out;
+  display: block; /* Make the whole area clickable */
+  padding: 10px; /* Add some padding for better touch targets */
+  border-radius: 5px; /* Optional: rounded corners for list items */
+}
+
+.assignment-list li a:hover {
+  color: #e74c3c; /* Coral/Red hover color */
+  padding-left: 10px; /* Subtle indentation on hover */
+  background-color: #f9f9f9; /* Light background on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50; /* Dark blue footer */
+  color: #fff;
+  text-align: center;
+  padding: 0.8em 0; /* Slightly reduced vertical padding */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9em; /* Slightly smaller font size */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle top shadow */
+}
+
+footer .container {
+  padding: 15px; /* Adjust container padding in footer */
+}
+
+/* Animations */
+
+/* Pulse animation on category card logos */
+.category-card .logo {
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
+
+body.html-assignments-page .assignment-list li a,
+body.xml-assignments-page .assignment-list li a,
+body.css-assignments-page .assignment-list li a {
+  width: 50%; /* Make the buttons narrower */
+  margin: 0 auto; /* Center the buttons */
+  text-align: center; /* Center the text inside the link */
+  display: block; /* Make the whole area clickable */
+  padding: 12px; /* Add some padding for better touch targets */
+  border-radius: 8px; /* Rounded corners for list items */
+  background-color: #00b894; /* Soft pastel blue background */
+  color: #2d3436; /* Dark charcoal gray text */
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Bold text */
+  font-size: 1.1em; /* Slightly larger font size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+  transition: all 0.3s ease-in-out; /* Smooth transitions for hover effects */
+  transform: translateY(10px); /* Initial position for smooth effect */
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards; /* Fade in animation */
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hover effect for assignment list links */
+body.html-assignments-page .assignment-list li a:hover,
+body.css-assignments-page .assignment-list li a:hover,
+body.xml-assignments-page .assignment-list li a:hover {
+  background-color: #f39c12; /* Vibrant teal on hover */
+  color: #fff; /* White text color on hover */
+  padding-left: 15px; /* Subtle indentation on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Focus effect for keyboard users */
+body.html-assignments-page .assignment-list li a:focus,
+body.css-assignments-page .assignment-list li a:focus,
+body.xml-assignments-page .assignment-list li a:focus {
+  outline: 3px solid #e74c3c; /* Red outline for focus visibility */
+}

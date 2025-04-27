@@ -1,18 +1,107 @@
-<html>
-<head>    
-  	<!-- Using Internal CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Webpage</title>
     <style>
-        h3 {
-        	text-align: center; 
-            color: green; 
-            font-family: Verdana; 
-            font-size: 30px;
+        /* General styles for the whole page */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #2c3e50;
+        }
+
+        /* Header with gradient background */
+        header {
+            background: linear-gradient(to right, #2980b9, #6dd5fa);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        /* Main content area */
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 400px;
+            padding: 20px;
+        }
+
+        .content .box {
+            background-color: #ffffff;
+            padding: 30px;
+            width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .content .box h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .content .box p {
+            font-size: 1em;
+            color: #7f8c8d;
+        }
+
+        /* Footer section */
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        /* Hover effect for boxes */
+        .content .box:hover {
+            background-color: #f39c12;
+            color: white;
+            cursor: pointer;
         }
     </style>
 </head>
-<body>  
-    <!-- CSS is applied here -->
-    <h3>Cascading Style Sheets [CSS] Example <br> Internal CSS</h3>
+<body>
+
+<header>
+    <h1>My Creative Webpage Using Internal CSS</h1>
+    <p>Explore my skills and learn more about me!</p>
+</header>
+
+<div class="content">
+    <div class="box">
+        <h2>Web Development</h2>
+        <p>I specialize in creating responsive and beautiful websites.</p>
+    </div>
+    <div class="box">
+        <h2>Graphic Design</h2>
+        <p>Passionate about creating stunning visuals and designs.</p>
+    </div>
+    <div class="box">
+        <h2>Photography</h2>
+        <p>Capturing moments and transforming them into beautiful stories.</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 My Creative Webpage</p>
+</footer>
 
 </body>
 </html>
