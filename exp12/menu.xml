@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="menu.xsl"?>
+<menu>
+    <item>
+        <name>Margherita Pizza</name>
+        <category>Pizza</category>
+        <price>8.99</price>
+    </item>
+    <item>
+        <name>Caesar Salad</name>
+        <category>Salad</category>
+        <price>5.49</price>
+    </item>
+    <item>
+        <name>Spaghetti Bolognese</name>
+        <category>Pasta</category>
+        <price>10.50</price>
+    </item>
+    <item>
+        <name>Chocolate Cake</name>
+        <category>Dessert</category>
+        <price>4.25</price>
+    </item>
+    <item>
+        <name>Grilled Chicken Sandwich</name>
+        <category>Sandwich</category>
+        <price>7.75</price>
+    </item>
+    <item>
+        <name>Tomato Soup</name>
+        <category>Soup</category>
+        <price>4.99</price>
+    </item>
+    <item>
+        <name>French Fries</name>
+        <category>Appetizer</category>
+        <price>3.50</price>
+    </item>
+    <item>
+        <name>Veggie Burger</name>
+        <category>Burger</category>
+        <price>9.25</price>
+    </item>
+    <item>
+        <name>Fish Tacos</name>
+        <category>Seafood</category>
+        <price>11.99</price>
+    </item>
+    <item>
+        <name>Mango Smoothie</name>
+        <category>Beverage</category>
+        <price>4.75</price>
+    </item>
+</menu>

@@ -41,6 +41,7 @@ header {
 }
 
 header .logo {
+  color: #f39c12;
   font-size: 1.2em;
   font-weight: bold;
   letter-spacing: 1px;
@@ -54,13 +55,13 @@ header .logo {
 }
 
 .info-card {
-  background-color: #fff;
+  background-color: #dff9fb;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: inline-block; /* Allows for potential centering and width control */
-  text-align: left; /* Align text within the card */
-  width: 80%; /* Adjust width as needed */
+  text-align: center; /* Align text within the card */
+  width: 50%; /* Adjust width as needed */
   max-width: 600px;
   opacity: 0;
   animation: fadeInCard 1s ease-out forwards;
@@ -80,7 +81,7 @@ header .logo {
 
 .info-card h4 {
   font-size: 1.4em;
-  margin-bottom: 5px;
+  margin-bottom: 0 px;
   color: #f94e5c; /* Bright golden yellow for paragraphs */
   text-transform: uppercase;
 }
@@ -291,3 +292,39 @@ body.css-assignments-page .assignment-list li a:focus,
 body.xml-assignments-page .assignment-list li a:focus {
   outline: 3px solid #e74c3c; /* Red outline for focus visibility */
 }
+
+.html-assignments-page header h1 a,
+.css-assignments-page header h1 a,
+.xml-assignments-page header h1 a {
+  color:#f39c12;
+  text-decoration: none;
+  font-size: 1em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.html-assignments-page header .container,
+.css-assignments-page header .container,
+.xml-assignments-page header .container {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 30px; 
+  padding: 20px 40px;
+}
+.section-title {
+  color:deeppink;
+}
+
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+

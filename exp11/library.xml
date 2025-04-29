@@ -2,13 +2,43 @@
 <?xml-stylesheet type="text/css" href="styles.css" ?>
 <library>
     <book id="1">
-        <title>To Kill a Mockingbird</title>
-        <author>Harper Lee</author>
-        <year>1960</year>
+        <title>Godaan</title>
+        <author>Munshi Premchand</author>
+        <year>1936</year>
     </book>
     <book id="2">
-        <title>1984</title>
-        <author>George Orwell</author>
-        <year>1949</year>
+        <title>Midnight's Children</title>
+        <author>Salman Rushdie</author>
+        <year>1981</year>
+    </book>
+    <book id="3">
+        <title>The Guide</title>
+        <author>R.K. Narayan</author>
+        <year>1958</year>
+    </book>
+    <book id="4">
+        <title>Train to Pakistan</title>
+        <author>Khushwant Singh</author>
+        <year>1956</year>
+    </book>
+    <book id="5">
+        <title>The White Tiger</title>
+        <author>Aravind Adiga</author>
+        <year>2008</year>
+    </book>
+    <book id="6">
+        <title>A Suitable Boy</title>
+        <author>Vikram Seth</author>
+        <year>1993</year>
+    </book>
+    <book id="7">
+        <title>Gitanjali</title>
+        <author>Rabindranath Tagore</author>
+        <year>1910</year>
+    </book>
+    <book id="8">
+        <title>Wings of Fire</title>
+        <author>A.P.J. Abdul Kalam</author>
+        <year>1999</year>
     </book>
 </library>

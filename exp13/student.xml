@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+<students>
+    <student>
+        <name>Sakshi Patil</name>
+        <roll>101</roll>
+        <branch>Computer Science</branch>
+        <percentage>87.5</percentage>
+    </student>
+    <student>
+        <name>Sneha Mehta</name>
+        <roll>102</roll>
+        <branch>Information Technology</branch>
+        <percentage>91.3</percentage>
+    </student>
+    <student>
+        <name>Amit Singh</name>
+        <roll>103</roll>
+        <branch>Electronics</branch>
+        <percentage>39.0</percentage>
+    </student>
+    <student>
+        <name>Pooja Sharma</name>
+        <roll>104</roll>
+        <branch>Mechanical</branch>
+        <percentage>85.4</percentage>
+    </student>
+    <student>
+        <name>Gayatri Mehta</name>
+        <roll>105</roll>
+        <branch>Information Technology</branch>
+        <percentage>35.3</percentage>
+    </student>
+</students>
